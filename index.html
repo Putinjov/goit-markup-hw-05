@@ -14,7 +14,7 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <!--Top Line-->
@@ -24,7 +24,7 @@
         <nav>
           <!-- Menu navigation -->
           <ul class="site-nav list">
-            <li class="item"><a class="link" href="./index.html">Студія</a></li>
+            <li class="item"><a class="link current" href="./index.html">Студія</a></li>
             <li class="item">
               <a class="link" href="./portfolio.html">Портфоліо</a>
             </li>
@@ -50,7 +50,7 @@
       <!--Герой-->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button" type="button">Замовити послугу</button>
+        <button class="button" data-modal-open type="button">Замовити послугу</button>
       </section>
       <!--Особливості///Прихований заголовок-->
       <section class="section">
@@ -119,6 +119,9 @@
                 alt="Програміст працює за комп'ютером в офісі"
                 width="370"
               />
+              <div class="text-box">
+                <p class="text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -127,6 +130,9 @@
                 alt="Веб дизайнер розробляє інтерфейс програми для смартфону"
                 width="370"
               />
+              <div class="text-box"> 
+                <p class="text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -135,6 +141,9 @@
                 alt="Веб дизайнер обирає колір з палітри на планшеті"
                 width="370"
               />
+              <div class="text-box">
+                <p class="text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -398,6 +407,7 @@
           </ul>
         </div>
       </section>
+      <!--------------------------- Постійні клієнти -------------------------------------->
       <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
@@ -556,6 +566,16 @@
         </div>
       </div>
     </footer>
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button" type="button" data-modal-close>
+          <svg class="icon" width="30" height="30">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
