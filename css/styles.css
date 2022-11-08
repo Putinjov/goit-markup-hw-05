@@ -249,33 +249,23 @@ h6 {
   transition: opacity 250ms var(--time-transition);
 }
 
-.backdrop.is-hidden{
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-  transform: scaleX(0.7) translate(-50%, -50%);
-}
-
-.modal{
+.modal {
   position: absolute;
   left: 50%;
   top: 50%;
 
   width: 528px;
   height: 581px;
-  
+
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  
+
   transform: scaleX(1) translate(-50%, -50%);
   transition: transform 250ms var(--time-transition), opacity 250ms var(--time-transition);
 }
 
-.modal .button{
+.modal .button {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -288,13 +278,21 @@ h6 {
   border-radius: 50%;
 }
 
-.button .icon{
+.button .icon {
   fill: currentColor;
   color: var(--social-icon-color);
   background-color: var(--bgcolor-primary);
 }
 
+.backdrop.is-hidden{
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 
+.backdrop.is-hidden .modal {
+  transform: scaleX(0.7) translate(-50%, -50%);
+}
 
 /*Section*/
 
@@ -687,20 +685,20 @@ flex-basis: calc((100% - (3 * var(--gap)))/4);
   position: absolute;
   display: inline-block;
   width: 322px;
-  height: 168px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .overlay-text{
+  display: block;
   font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--white-color);
     border: none;
-
+    padding: 63px 24px;
       transform: translateY(150%);
         transition: transform 250ms var(--time-transition);
 }
