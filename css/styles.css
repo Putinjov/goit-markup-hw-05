@@ -286,13 +286,15 @@ h6 {
   justify-content: center;
   border-radius: 50%;
 
-  background-color: transparent;
+  background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .button .icon {
-  fill: currentColor;
+  color: currentColor;
 }
+
+
 
 .backdrop.is-hidden{
   visibility: hidden;
